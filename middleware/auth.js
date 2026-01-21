@@ -13,6 +13,8 @@ exports.protect = asyncCatch(async (req, res, next) => {
     req.headers.authorization &&
     req.headers.authorization.startsWith("Bearer")
   ) {
+    // As much I understand, you're trying to get the token form headers
+    // I guess if you get from the cookie using cookie parser package would be better
     token = req.headers.authorization.split(" ")[1];
   }
 
