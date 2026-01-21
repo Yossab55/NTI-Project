@@ -40,7 +40,7 @@ Supports JWT Authentication, Role-based Authorization, Global Error Handling, So
 ## 🔐 Authentication & Authorization
 
 - **JWT Authentication**: Login returns a JWT token
-- **Protected Routes**: Require `Authorization: Bearer <token>` header
+- **Product Routes**: Require `Authorization: Bearer <token>` header
 - **Middleware**:
   - `protect` → verifies token and attaches `req.user`
   - `restrictTo(...roles)` → allows only specific roles (e.g., `"admin"`)
