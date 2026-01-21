@@ -3,7 +3,7 @@ const router = express.Router();
 const usersController = require('../controllers/userControllers');
 const authMiddleware = require('../middleware/auth');
 
-router.use(authMiddleware.protect);
+router.use(authMiddleware.protect); // you make me see something really new and very good for clean code :) thanks bro
 // GET all users
 router.get('/', authMiddleware.restrictTo('admin'), usersController.getAllUsers);
 
